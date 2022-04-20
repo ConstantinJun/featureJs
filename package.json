@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "featurejs",
+  "version": "1.0.0",
+  "description": "Homework",
+  "main": "task2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConstantinJun/featureJs.git"
+  },
+  "author": "Bunu Constantin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConstantinJun/featureJs/issues"
+  },
+  "homepage": "https://github.com/ConstantinJun/featureJs#readme",
+  "dependencies": {
+    "@js-temporal/polyfill": "^0.4.1",
+    "config": "^3.3.7"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
+}

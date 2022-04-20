@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+.app {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    margin-top: 200px;
+    padding: 10px;
+    height: 140px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 15px;
+    
+}
+
+button:hover{
+    border: 1px solid grey;
+    background-color: black;
+    color: white
+}
+
+
+.app--date{
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app--date button{
+    height: 30px;
+}
+
+.app--date h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.app--input-date{
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.app--input-date select{
+    border-radius: 15px;
+}
+
+
+.app--content-changer{
+    position: absolute;
+    right: -90px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.app--content-changer ul{
+    list-style: none;
+    margin: 0;
+    padding:10px;
+}
+
+.app--content-changer span:hover{
+    background-color: hsla(0, 0%, 88%, 0.426);
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgba(71, 70, 70, 0.712);
+}
+

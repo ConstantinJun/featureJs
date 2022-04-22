@@ -10,14 +10,21 @@ const appInputBtn = appFormDate.querySelector('button');
 
 const contentChagner = document.querySelector('.app--content-changer')
 
+const date34 = Temporal.Now.plainDateTimeISO()
+date34.hour
+date34.minute
+date34.second
+const date = Temporal.Now.zonedDateTimeISO().toString();
+const date1 = Temporal.Now.instant().toString();
+const date2 = Temporal.TimeZone.from('Europe/Chisinau')
 
-const date = Temporal.Now.zonedDateTime().toString();
-
-console.log(date)
-
-contentDate.textContent = date;
+console.log(date34.hour)
+console.log(date1)
+console.log(date2)
+contentDate.textContent = date2;
 
 
 contentDateBtn.addEventListener('click', ()=>{
 contentChagner.classList.toggle('visible')
+console.log('text')
 })

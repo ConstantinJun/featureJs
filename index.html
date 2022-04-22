@@ -11,26 +11,20 @@
 <body>
     <div class="app">
         <div class="app--date">
-            <h1>
-                <!-- Js work -->Somthing
-            </h1>
-        </div>
-        <div class="app--content-changer">
-            <ul>
-                <li>
-                    <span class="first">ISO</span>
-                </li>
-                <li>
-                    <span class="second">UTC</span>
-                </li>
-            </ul>
-        </div>
+            <div class="clock">
+                <span class="hours"></span>
+                <span class="minute"></span>
+                <span class="second"></span>
+            </div>
+        </div>      
         <div class="app--input-date">
             <form >
                 <label for="text">Introduce regiunea</label>
-                <select name="location" id>
-                    <option value="Africa/Cairo">Africa/Cairo</option>
+                <select name="location" id="location">
                     <option value="Europe/Chisinau">Europe/Chisinau</option>
+                    <option value="Africa/Cairo">Africa/Cairo</option>
+                    <option value="America/New_York">America/New_York</option>
+                    <option value="Asia/Tokyo">Asia/Tokyo</option>
                 </select>
             </form>
         </div>

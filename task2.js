@@ -4,27 +4,35 @@ const contentDate = appDate.querySelector('h1');
 const contentDateBtn = appDate.querySelector('button');
 
 const appFormDate = document.querySelector('.app--input-date');
-const appInput = appFormDate.querySelector('input');
+const appSelect = appFormDate.querySelector('select');
 const appInputBtn = appFormDate.querySelector('button');
 
-
-const contentChagner = document.querySelector('.app--content-changer')
-
-const date34 = Temporal.Now.plainDateTimeISO()
-date34.hour
-date34.minute
-date34.second
-const date = Temporal.Now.zonedDateTimeISO().toString();
-const date1 = Temporal.Now.instant().toString();
-const date2 = Temporal.TimeZone.from('Europe/Chisinau')
-
-console.log(date34.hour)
-console.log(date1)
-console.log(date2)
-contentDate.textContent = date2;
+let timezone;
+let status = true;
 
 
-contentDateBtn.addEventListener('click', ()=>{
-contentChagner.classList.toggle('visible')
-console.log('text')
+
+const orcale = (timezone)=>{
+    const zone = timezone;
+    let date = Temporal.Now.plainDateTimeISO(zone)
+    date.hour
+    date.minute
+    date.second
+    contentDate.innerHTML=`<span>${date.hour}</span>:
+    <span>${date.minute}</span>:
+    <span>${date.second}</span>
+    `;
+
+    setTimeout(orcale.bind(null,zone),0)
+}
+
+orcale()
+
+appSelect.addEventListener('click', ()=>{
+    timezone = appSelect.value;
+    orcale(timezone);
 })
+
+
+
+

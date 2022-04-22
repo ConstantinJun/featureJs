@@ -17,22 +17,14 @@
     margin-top: 200px;
     padding: 10px;
     height: 140px;
-    width: 400px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-input {
-    border: 1px solid black;
-    border-radius: 15px;
-}
 
-button{
-    border: 1px solid black;
-    border-radius: 15px;
-    
-}
+
 
 button:hover{
     border: 1px solid grey;
@@ -48,12 +40,9 @@ button:hover{
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.app--date button{
-    height: 30px;
-}
 
 .app--date h1{
     font-size: 1.5rem;
@@ -66,8 +55,12 @@ button:hover{
     overflow: hidden;
     padding: 10px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+}
+
+.app--input-date form{
+    display: flex;
+    gap: 50px;
 }
 
 
